@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: ./
-        file: ./dockerfile
+        file: ./Dockerfile
         push: true
         # '아이디/이미지명:태그' 형식으로 적으세요.
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-ml-app:latest
